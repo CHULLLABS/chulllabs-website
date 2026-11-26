@@ -1,190 +1,192 @@
 import { currentProjects, type ProjectTeaser } from "@/config/projects";
 
-function PhoneAsRemoteVisual() {
+function PhoneAsRemotePlate() {
   return (
-    <div className="relative flex h-56 w-full items-center justify-center overflow-hidden rounded-xl border border-border-subtle bg-background p-6">
+    <div className="relative flex aspect-[16/10] w-full items-center justify-center overflow-hidden rounded-sm border border-border-subtle bg-surface p-8">
       <svg
-        viewBox="0 0 360 200"
-        className="h-full w-full max-w-[340px]"
+        viewBox="0 0 420 240"
+        className="h-full w-full max-w-[380px]"
         role="img"
-        aria-label="Minimalist schematic of a smartphone acting as an interactive game controller"
+        aria-label="Minimalist architectural plate of a smartphone in landscape controller orientation"
       >
-        {/* Subtle background grid lines */}
-        <line x1="20" y1="100" x2="340" y2="100" stroke="#18375D" strokeOpacity="0.08" strokeDasharray="4 4" />
-        <line x1="180" y1="16" x2="180" y2="184" stroke="#18375D" strokeOpacity="0.08" strokeDasharray="4 4" />
+        {/* Architectural registration marks */}
+        <path d="M24 24h12M24 24v12" stroke="#18375D" strokeOpacity="0.28" strokeWidth="1" />
+        <path d="M396 24h-12M396 24v12" stroke="#18375D" strokeOpacity="0.28" strokeWidth="1" />
+        <path d="M24 216h12M24 216v-12" stroke="#18375D" strokeOpacity="0.28" strokeWidth="1" />
+        <path d="M396 216h-12M396 216v-12" stroke="#18375D" strokeOpacity="0.28" strokeWidth="1" />
 
-        {/* Subtle signal waves */}
-        <path
-          d="M248 76 C264 88, 264 112, 248 124"
-          fill="none"
-          stroke="#8B61C2"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeOpacity="0.45"
-        />
-        <path
-          d="M262 64 C284 82, 284 118, 262 136"
-          fill="none"
-          stroke="#8B61C2"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeOpacity="0.25"
-        />
+        {/* Horizontal datum line */}
+        <line x1="36" y1="120" x2="384" y2="120" stroke="#18375D" strokeOpacity="0.1" strokeWidth="1" />
 
-        {/* Stylized horizontal smartphone silhouette */}
+        {/* Device frame */}
         <rect
-          x="86"
-          y="46"
-          width="156"
-          height="108"
-          rx="18"
-          fill="#F7F8F5"
-          stroke="#18375D"
-          strokeWidth="2"
-        />
-        <rect
-          x="96"
+          x="88"
           y="54"
-          width="136"
-          height="92"
-          rx="10"
+          width="244"
+          height="132"
+          rx="22"
           fill="#FFFFFF"
+          stroke="#18375D"
+          strokeWidth="1.75"
+        />
+        <rect
+          x="100"
+          y="64"
+          width="220"
+          height="112"
+          rx="14"
+          fill="#F7F8F5"
           stroke="#18375D"
           strokeOpacity="0.18"
           strokeWidth="1"
         />
 
-        {/* Left directional pad */}
-        <circle cx="132" cy="100" r="20" fill="#8B61C2" fillOpacity="0.12" stroke="#8B61C2" strokeWidth="1.5" />
-        <path d="M132 91v18M123 100h18" stroke="#7045A8" strokeWidth="2.5" strokeLinecap="round" />
+        {/* Left tactile zone */}
+        <circle cx="152" cy="120" r="26" fill="none" stroke="#8B61C2" strokeWidth="1.25" />
+        <circle cx="152" cy="120" r="6" fill="#8B61C2" />
 
-        {/* Right action buttons */}
-        <circle cx="196" cy="91" r="6" fill="#18375D" />
-        <circle cx="208" cy="103" r="6" fill="#8B61C2" />
-        <circle cx="184" cy="103" r="6" fill="#8B61C2" fillOpacity="0.45" />
-        <circle cx="196" cy="115" r="6" fill="#18375D" fillOpacity="0.35" />
+        {/* Center divider */}
+        <line x1="210" y1="84" x2="210" y2="156" stroke="#18375D" strokeOpacity="0.14" strokeWidth="1" />
+
+        {/* Right tactile action points */}
+        <circle cx="268" cy="103" r="6.5" fill="#18375D" />
+        <circle cx="285" cy="120" r="6.5" fill="#8B61C2" />
+        <circle cx="251" cy="120" r="6.5" fill="none" stroke="#18375D" strokeWidth="1.5" />
+        <circle cx="268" cy="137" r="6.5" fill="none" stroke="#8B61C2" strokeWidth="1.5" />
       </svg>
     </div>
   );
 }
 
-function EarthReimaginedVisual() {
+function EarthReimaginedPlate() {
   return (
-    <div className="relative flex h-56 w-full items-center justify-center overflow-hidden rounded-xl border border-border-subtle bg-background p-6">
+    <div className="relative flex aspect-[16/10] w-full items-center justify-center overflow-hidden rounded-sm border border-border-subtle bg-surface p-8">
       <svg
-        viewBox="0 0 360 200"
-        className="h-full w-full max-w-[340px]"
+        viewBox="0 0 420 240"
+        className="h-full w-full max-w-[380px]"
         role="img"
-        aria-label="Stylized 3D topographic game terrain illustration"
+        aria-label="Stylized low-poly game terrain and topographic elevation plate"
       >
-        {/* Stylized sky/horizon */}
-        <circle cx="280" cy="48" r="18" fill="#8B61C2" fillOpacity="0.18" />
-        <circle cx="280" cy="48" r="10" fill="#8B61C2" fillOpacity="0.35" />
+        {/* Registration marks */}
+        <path d="M24 24h12M24 24v12" stroke="#18375D" strokeOpacity="0.28" strokeWidth="1" />
+        <path d="M396 24h-12M396 24v12" stroke="#18375D" strokeOpacity="0.28" strokeWidth="1" />
+        <path d="M24 216h12M24 216v-12" stroke="#18375D" strokeOpacity="0.28" strokeWidth="1" />
+        <path d="M396 216h-12M396 216v-12" stroke="#18375D" strokeOpacity="0.28" strokeWidth="1" />
 
-        {/* Back stylized mountain ridge */}
+        {/* Stylized celestial disc */}
+        <circle cx="320" cy="64" r="18" fill="#8B61C2" fillOpacity="0.16" stroke="#8B61C2" strokeOpacity="0.4" strokeWidth="1" />
+
+        {/* Distant stylized ridge */}
         <polygon
-          points="20,162 92,80 156,132 228,58 340,162"
+          points="38,186 112,92 178,144 252,68 382,186"
           fill="#18375D"
-          fillOpacity="0.1"
+          fillOpacity="0.08"
           stroke="#18375D"
-          strokeOpacity="0.3"
-          strokeWidth="1.5"
+          strokeOpacity="0.35"
+          strokeWidth="1.25"
           strokeLinejoin="round"
         />
 
         {/* Mid faceted low-poly terrain */}
         <polygon
-          points="42,174 128,96 192,150 264,88 334,174"
+          points="62,196 146,108 214,162 288,96 364,196"
           fill="#8B61C2"
-          fillOpacity="0.16"
+          fillOpacity="0.15"
           stroke="#7045A8"
           strokeWidth="1.5"
           strokeLinejoin="round"
         />
 
-        {/* Facet lines for stylized 3D game-art feel */}
-        <line x1="128" y1="96" x2="146" y2="174" stroke="#7045A8" strokeOpacity="0.45" strokeWidth="1.2" />
-        <line x1="264" y1="88" x2="246" y2="174" stroke="#18375D" strokeOpacity="0.4" strokeWidth="1.2" />
-        <line x1="192" y1="150" x2="192" y2="174" stroke="#18375D" strokeOpacity="0.3" strokeWidth="1.2" />
+        {/* Facet lines */}
+        <line x1="146" y1="108" x2="164" y2="196" stroke="#7045A8" strokeOpacity="0.45" strokeWidth="1" />
+        <line x1="288" y1="96" x2="268" y2="196" stroke="#18375D" strokeOpacity="0.4" strokeWidth="1" />
+        <line x1="214" y1="162" x2="214" y2="196" stroke="#18375D" strokeOpacity="0.3" strokeWidth="1" />
 
-        {/* Foreground stylized contour base */}
-        <path
-          d="M24 174 Q110 156 180 170 T336 168"
-          fill="none"
-          stroke="#18375D"
-          strokeWidth="2"
-          strokeLinecap="round"
-        />
+        {/* Topographic horizon baseline */}
+        <line x1="38" y1="196" x2="382" y2="196" stroke="#18375D" strokeWidth="1.5" />
       </svg>
     </div>
   );
 }
 
-function ProjectVisual({ id }: { id: ProjectTeaser["id"] }) {
+function ProjectPlate({ id }: { id: ProjectTeaser["id"] }) {
   if (id === "phone-as-remote") {
-    return <PhoneAsRemoteVisual />;
+    return <PhoneAsRemotePlate />;
   }
-  return <EarthReimaginedVisual />;
+  return <EarthReimaginedPlate />;
 }
 
 export function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="scroll-mt-16 border-b border-border-subtle bg-surface py-20 sm:py-24"
+      className="scroll-mt-16 border-b border-border-subtle bg-background py-20 sm:py-28"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="max-w-2xl">
-          <p className="font-mono text-xs uppercase tracking-[0.14em] text-brand-purple-text">
-            02 // Current Projects
-          </p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-[-0.02em] text-brand-navy sm:text-4xl">
-            Products in active exploration.
-          </h2>
-          <p className="mt-3 text-base leading-relaxed text-muted">
-            Each project is developed with its own direction and identity under
-            the ChullLabs studio.
+        <div className="flex flex-col gap-4 border-b border-border-subtle pb-10 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="font-mono text-xs uppercase tracking-[0.14em] text-muted">
+              Current Projects
+            </p>
+            <h2 className="mt-3 font-serif text-4xl leading-[1.08] tracking-[-0.015em] text-brand-navy sm:text-5xl">
+              Products in active exploration.
+            </h2>
+          </div>
+          <p className="max-w-sm text-sm leading-relaxed text-muted">
+            Each project is shaped with its own identity and direction under the
+            ChullLabs studio.
           </p>
         </div>
 
-        <div className="mt-12 grid gap-8 lg:grid-cols-2">
-          {currentProjects.map((project) => (
+        <div className="divide-y divide-border-subtle">
+          {currentProjects.map((project, index) => (
             <article
               key={project.id}
-              className="flex flex-col justify-between rounded-2xl border border-border-subtle bg-background p-6 sm:p-8"
+              className="grid items-center gap-10 py-14 lg:grid-cols-12 lg:gap-12"
             >
-              <div>
-                <ProjectVisual id={project.id} />
+              <div
+                className={
+                  index % 2 === 1 ? "lg:col-span-6 lg:order-2" : "lg:col-span-6"
+                }
+              >
+                <ProjectPlate id={project.id} />
+              </div>
 
-                <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
-                  <span className="font-mono text-xs uppercase tracking-[0.1em] text-muted">
+              <div
+                className={
+                  index % 2 === 1 ? "lg:col-span-6 lg:order-1" : "lg:col-span-6"
+                }
+              >
+                <div className="flex flex-wrap items-center gap-4">
+                  <span className="font-mono text-xs uppercase tracking-[0.12em] text-muted">
                     {project.category}
                   </span>
-                  <span className="inline-flex items-center gap-1.5 rounded-full border border-amber-600/20 bg-amber-50 px-2.5 py-1 font-mono text-[11px] font-medium text-amber-800">
+                  <span className="text-border-subtle" aria-hidden="true">
+                    /
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 font-mono text-xs text-brand-purple-text">
                     <span
-                      className="h-1.5 w-1.5 rounded-full bg-amber-600"
+                      className="h-1.5 w-1.5 rounded-full bg-brand-purple"
                       aria-hidden="true"
                     />
                     {project.status}
                   </span>
                 </div>
 
-                <h3 className="mt-4 text-2xl font-semibold tracking-tight text-brand-navy">
+                <h3 className="mt-4 font-serif text-3xl tracking-tight text-brand-navy sm:text-4xl">
                   {project.name}
                 </h3>
 
-                <p className="mt-2 text-base font-medium text-brand-purple-text">
+                <p className="mt-3 text-lg font-medium text-foreground">
                   {project.positioning}
                 </p>
 
-                <p className="mt-3 text-sm leading-relaxed text-muted sm:text-base">
+                <p className="mt-3 max-w-lg text-base leading-relaxed text-muted">
                   {project.description}
                 </p>
-              </div>
 
-              <div className="mt-8 border-t border-border-subtle pt-5">
-                <p className="font-mono text-xs text-muted">
-                  Dedicated product page planned · {project.slug}
+                <p className="mt-6 font-mono text-xs text-muted">
+                  Planned product route: {project.slug}
                 </p>
               </div>
             </article>
