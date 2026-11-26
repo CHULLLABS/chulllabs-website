@@ -83,6 +83,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           height: siteConfig.logo.height,
         },
         description: siteConfig.description,
+        sameAs: siteConfig.socials.map((social) => social.href),
       },
       {
         "@type": "WebSite",

@@ -39,6 +39,17 @@ export function ContactSection() {
                   Send email
                 </a>
                 <CopyEmailButton email={siteConfig.contact.email} />
+                {siteConfig.socials.map((social) => (
+                  <a
+                    key={social.href}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="border-b border-foreground/30 pb-0.5 text-sm font-medium text-foreground transition-colors hover:border-brand-purple-text hover:text-brand-purple-text focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-purple"
+                  >
+                    {social.label}
+                  </a>
+                ))}
               </div>
             </div>
           </div>
