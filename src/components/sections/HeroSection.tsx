@@ -19,6 +19,12 @@ export function HeroSection() {
         aria-hidden="true"
       />
 
+      {/* Bottom meadow-to-forest fade so the lower section flows seamlessly */}
+      <div
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#161F18] via-[#161F18]/45 to-transparent"
+        aria-hidden="true"
+      />
+
       {/* Centered editorial headline in the open sky */}
       <div className="relative z-10 mx-auto max-w-2xl text-center">
         <p className="inline-flex items-center rounded-full border border-brand-navy/10 bg-white/80 px-3.5 py-1 text-[11px] font-medium tracking-[0.06em] text-brand-navy backdrop-blur-sm">

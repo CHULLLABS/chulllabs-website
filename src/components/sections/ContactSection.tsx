@@ -3,16 +3,19 @@ import { CopyEmailButton } from "@/components/common/CopyEmailButton";
 
 export function ContactSection() {
   return (
-    <section id="contact" className="scroll-mt-20 py-14 sm:py-20">
+    <section
+      id="contact"
+      className="scroll-mt-20 bg-[#161F18] pt-8 pb-20 text-[#F4F5F2] sm:pt-10 sm:pb-24"
+    >
       <div className="mx-auto max-w-5xl px-5 sm:px-8">
-        <div className="flex flex-col gap-6 rounded-xl border border-border-subtle bg-surface p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
+        <div className="flex flex-col gap-6 rounded-2xl border border-white/10 bg-white/[0.04] p-7 backdrop-blur-sm sm:flex-row sm:items-center sm:justify-between sm:p-9">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#A4B0A6]">
               Contact
             </p>
             <a
               href={`mailto:${siteConfig.contact.email}`}
-              className="mt-2 block break-all text-lg font-semibold tracking-tight text-brand-navy transition-colors hover:text-brand-purple-text focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-purple sm:text-xl"
+              className="mt-2 block break-all text-lg font-medium tracking-tight text-white transition-colors hover:text-[#B794F4] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#B794F4] sm:text-xl"
             >
               {siteConfig.contact.email}
             </a>
@@ -21,7 +24,7 @@ export function ContactSection() {
           <div className="flex flex-wrap items-center gap-3">
             <a
               href={`mailto:${siteConfig.contact.email}`}
-              className="inline-flex items-center justify-center rounded-lg bg-brand-navy px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-brand-navy/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-purple"
+              className="inline-flex items-center justify-center rounded-full bg-white px-5 py-2 text-sm font-medium text-[#161F18] transition-colors hover:bg-white/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B794F4]"
             >
               Email us
             </a>
@@ -32,7 +35,7 @@ export function ContactSection() {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-lg border border-border-subtle bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-surface-muted focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-purple"
+                className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/[0.05] px-5 py-2 text-sm font-medium text-[#F4F5F2] transition-colors hover:border-white/30 hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B794F4]"
               >
                 {social.label}
               </a>
