@@ -4,11 +4,11 @@ import { siteConfig } from "@/config/site";
 
 export function Header() {
   return (
-    <header className="border-b border-border-subtle bg-background">
-      <div className="mx-auto flex h-16 max-w-4xl items-center justify-between px-4 sm:px-6">
+    <header className="sticky top-0 z-40 border-b border-border-subtle bg-background/90 backdrop-blur-md">
+      <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-5 sm:px-8">
         <Link
           href="/"
-          className="inline-flex items-center rounded-sm py-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-purple"
+          className="inline-flex items-center rounded-md py-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-purple"
           aria-label="ChullLabs home"
         >
           <Image
@@ -17,7 +17,7 @@ export function Header() {
             width={siteConfig.logo.width}
             height={siteConfig.logo.height}
             priority
-            className="h-8 w-auto object-contain"
+            className="h-9 w-auto object-contain"
           />
         </Link>
 
@@ -26,7 +26,7 @@ export function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="text-sm text-muted transition-colors hover:text-brand-navy focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-purple"
+              className="text-sm font-medium text-muted transition-colors hover:text-brand-navy focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-purple"
             >
               {item.label}
             </a>

@@ -5,8 +5,8 @@ export function Footer() {
 
   return (
     <footer className="border-t border-border-subtle bg-background">
-      <div className="mx-auto flex max-w-4xl flex-col gap-2 px-4 py-8 text-xs text-muted sm:flex-row sm:items-center sm:justify-between sm:px-6">
-        <p>© {currentYear} {siteConfig.name}</p>
+      <div className="mx-auto flex max-w-5xl flex-col gap-2 px-5 py-6 text-xs text-muted sm:flex-row sm:items-center sm:justify-between sm:px-8">
+        <p>© {currentYear} {siteConfig.name}. All rights reserved.</p>
         <p className="font-mono">chulllabs.in</p>
       </div>
     </footer>

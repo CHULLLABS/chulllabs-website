@@ -1,18 +1,19 @@
 export function HeroSection() {
   return (
-    <section className="border-b border-border-subtle bg-background py-20 sm:py-28">
-      <div className="mx-auto max-w-4xl px-4 sm:px-6">
-        <p className="font-mono text-xs uppercase tracking-[0.14em] text-muted">
+    <section className="bg-background pt-16 pb-12 sm:pt-24 sm:pb-16">
+      <div className="mx-auto max-w-5xl px-5 sm:px-8">
+        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-purple-text">
           Independent Technology Studio
         </p>
 
-        <h1 className="mt-5 font-serif text-4xl leading-[1.06] tracking-[-0.02em] text-brand-navy sm:text-6xl">
-          Ideas worth <em className="italic text-brand-purple-text">exploring.</em>
-          <br />
-          Technology worth <em className="italic">building.</em>
+        <h1 className="mt-4 max-w-3xl text-4xl font-semibold tracking-[-0.035em] text-brand-navy sm:text-6xl sm:leading-[1.06]">
+          Ideas worth exploring.
+          <span className="block text-foreground/85">
+            Technology worth building.
+          </span>
         </h1>
 
-        <p className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
+        <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
           ChullLabs is an independent technology studio exploring new
           possibilities through software, engineering, and creative
           experimentation.
