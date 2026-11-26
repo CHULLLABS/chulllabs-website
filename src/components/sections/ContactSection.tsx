@@ -5,53 +5,41 @@ export function ContactSection() {
   return (
     <section
       id="contact"
-      className="scroll-mt-16 bg-surface py-20 sm:py-28"
+      className="scroll-mt-20 bg-[#12233B] pt-8 pb-20 text-[#F4F5F8] sm:pt-10 sm:pb-24"
     >
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-12 lg:items-end">
-          <div className="lg:col-span-6">
-            <p className="font-mono text-xs uppercase tracking-[0.14em] text-muted">
+      <div className="mx-auto max-w-5xl px-5 sm:px-8">
+        <div className="flex flex-col gap-6 rounded-2xl border border-white/10 bg-white/[0.04] p-7 backdrop-blur-sm sm:flex-row sm:items-center sm:justify-between sm:p-9">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#9FB0C7]">
               Contact
             </p>
-            <h2 className="mt-4 font-serif text-4xl leading-[1.08] tracking-[-0.015em] text-brand-navy sm:text-5xl">
-              Start a conversation.
-            </h2>
-            <p className="mt-4 max-w-md text-base leading-relaxed text-muted">
-              For general inquiries, collaborations, or questions about our
-              work, reach out directly by email.
-            </p>
+            <a
+              href={`mailto:${siteConfig.contact.email}`}
+              className="mt-2 block break-all text-lg font-medium tracking-tight text-white transition-colors hover:text-[#B794F4] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#B794F4] sm:text-xl"
+            >
+              {siteConfig.contact.email}
+            </a>
           </div>
 
-          <div className="lg:col-span-6 lg:flex lg:flex-col lg:items-end">
-            <div className="w-full max-w-lg border-t border-border-subtle pt-6 lg:text-right">
+          <div className="flex flex-wrap items-center gap-3">
+            <a
+              href={`mailto:${siteConfig.contact.email}`}
+              className="inline-flex items-center justify-center rounded-full bg-white px-5 py-2 text-sm font-medium text-[#12233B] transition-colors hover:bg-white/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B794F4]"
+            >
+              Email us
+            </a>
+            <CopyEmailButton email={siteConfig.contact.email} />
+            {siteConfig.socials.map((social) => (
               <a
-                href={`mailto:${siteConfig.contact.email}`}
-                className="block break-all font-serif text-2xl text-brand-navy underline decoration-border-subtle underline-offset-8 transition-colors hover:text-brand-purple-text hover:decoration-brand-purple-text focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-purple sm:text-3xl"
+                key={social.href}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/[0.05] px-5 py-2 text-sm font-medium text-[#F4F5F8] transition-colors hover:border-white/30 hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B794F4]"
               >
-                {siteConfig.contact.email}
+                {social.label}
               </a>
-
-              <div className="mt-6 flex flex-wrap items-center gap-4 lg:justify-end">
-                <a
-                  href={`mailto:${siteConfig.contact.email}`}
-                  className="inline-flex items-center justify-center rounded-sm bg-brand-navy px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-brand-navy/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-purple"
-                >
-                  Send email
-                </a>
-                <CopyEmailButton email={siteConfig.contact.email} />
-                {siteConfig.socials.map((social) => (
-                  <a
-                    key={social.href}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="border-b border-foreground/30 pb-0.5 text-sm font-medium text-foreground transition-colors hover:border-brand-purple-text hover:text-brand-purple-text focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-purple"
-                  >
-                    {social.label}
-                  </a>
-                ))}
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
