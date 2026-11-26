@@ -20,5 +20,10 @@ export const siteConfig = {
     { label: "Philosophy", href: "#philosophy" },
     { label: "Contact", href: "#contact" },
   ],
-  socials: [] as { label: string; href: string }[],
+  socials: [
+    {
+      label: "Instagram",
+      href: "https://www.instagram.com/chull_labs/",
+    },
+  ],
 } as const;

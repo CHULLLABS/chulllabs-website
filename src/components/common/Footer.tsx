@@ -60,6 +60,18 @@ export function Footer() {
                     {siteConfig.contact.email}
                   </a>
                 </li>
+                {siteConfig.socials.map((social) => (
+                  <li key={social.href}>
+                    <a
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-foreground/85 transition-colors hover:text-brand-navy focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-purple"
+                    >
+                      {social.label}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
