@@ -31,6 +31,8 @@ export function HeroSection() {
               >
                 Explore Projects
                 <svg
+                  width="16"
+                  height="16"
                   className="ml-2 h-4 w-4"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -50,6 +52,8 @@ export function HeroSection() {
               >
                 Get in Touch
                 <svg
+                  width="16"
+                  height="16"
                   className="ml-2 h-4 w-4 text-muted"
                   viewBox="0 0 24 24"
                   fill="none"

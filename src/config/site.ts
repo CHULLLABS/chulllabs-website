@@ -1,12 +1,14 @@
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export const siteConfig = {
   name: "ChullLabs",
   url: "https://chulllabs.in",
   title: "ChullLabs — Independent Technology & Product Studio",
   description:
     "ChullLabs is an independent technology studio exploring new possibilities through software, engineering, and creative experimentation.",
-  ogImage: "/og/og-chulllabs.png",
+  ogImage: `${basePath}/og/og-chulllabs.png`,
   logo: {
-    src: "/brand/chulllabs-logo-transparent.png",
+    src: `${basePath}/brand/chulllabs-logo-transparent.png`,
     width: 246,
     height: 155,
     alt: "ChullLabs wordmark logo",
