@@ -7,6 +7,7 @@ export const siteConfig = {
   description:
     "ChullLabs is an independent technology studio exploring new possibilities through software, engineering, and creative experimentation.",
   ogImage: `${basePath}/og/og-chulllabs.png`,
+  heroImage: `${basePath}/hero/hero-landscape.webp`,
   logo: {
     src: `${basePath}/brand/chulllabs-logo-transparent.png`,
     width: 246,
