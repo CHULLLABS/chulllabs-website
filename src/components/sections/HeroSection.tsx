@@ -19,9 +19,9 @@ export function HeroSection() {
         aria-hidden="true"
       />
 
-      {/* Bottom meadow-to-forest fade so the lower section flows seamlessly */}
+      {/* Bottom horizon-to-navy fade so the lower section flows seamlessly */}
       <div
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#161F18] via-[#161F18]/45 to-transparent"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#12233B] via-[#12233B]/45 to-transparent"
         aria-hidden="true"
       />
 
